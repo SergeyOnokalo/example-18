@@ -1,0 +1,21 @@
+@font-face{
+  font-family: 'StolzlDisplay-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src:url('../fonts/StolzlDisplay-Regular.woff2') format('woff2'),url('../fonts/StolzlDisplay-Regular.woff') format('woff');
+  font-display: swap;
+}
+@font-face{
+  font-family: 'StolzlDisplay-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src:url('../fonts/StolzlDisplay-Medium.woff2') format('woff2'),url('../fonts/StolzlDisplay-Medium.woff') format('woff');
+  font-display: swap;
+}
+@font-face{
+  font-family: 'StolzlDisplay-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src:url('../fonts/StolzlDisplay-Bold.woff2') format('woff2'),url('../fonts/StolzlDisplay-Bold.woff') format('woff');
+  font-display: swap;
+}
