@@ -1,0 +1,332 @@
+@media(max-width:768px){
+  .container{
+    @include p-s("padding-right", 20);
+    @include p-s("padding-left", 20);
+  }
+  .header {
+    &__logo-img {
+      @include p-s("width", 315);
+      @include p-s("height", 315);
+    }
+    &__logo-text {
+      @include p-s("font-size", 75);
+      @include p-s("line-height", 70);
+      @include shadow("text-shadow", 4, 4, 0, #6D4169);
+    }
+    &__menu-btn {
+      @include p-s("width", 200);
+      @include p-s("height", 200);
+      @include p-s("padding-top", 48);
+      @include p-s("padding-right", 48);
+      @include p-s("padding-bottom", 48);
+      @include p-s("padding-left", 48);
+      @include p-s("border-radius", 48);
+      @include shadow("box-shadow", 0, 0, 24, rgba(119, 119, 119, 0.5));
+    }
+    &__menu-btn:hover {
+      @include shadow("box-shadow", 0, 0, 40, rgba(109, 65, 105, 1));
+    }
+    &__menu-btn-line {
+      @include p-s("width", 104);
+      @include p-s("height", 12);
+    }
+    &__menu-btn-line::before{
+      content:"";
+      @include p-s("width", 104);
+      @include p-s("height", 12);
+      @include p-s("bottom", 46);
+    }
+    &__menu-btn-line::after{
+      content:"";
+      @include p-s("width", 104);
+      @include p-s("height", 12);
+      @include p-s("top", 46);
+    }
+  }
+
+  .planet{
+    &__circle{
+      left: -50%;
+      @include p-s("bottom", -2960);
+      width: 200vw;
+      height: 200vw;
+    }
+    &__tree1{
+      svg{
+        @include p-s("width", 1022);
+        @include p-s("height", 770);
+      }
+    }
+    &__tree2{
+      svg{
+        @include p-s("width", 1036);
+        @include p-s("height", 792);
+  
+      }
+    }
+    &__tree3{
+      svg{
+        @include p-s("width", 980);
+        @include p-s("height", 748);
+      }
+    }
+    &__tree4{
+      svg{
+        @include p-s("width", 1036);
+        @include p-s("height", 702);
+      }
+    }
+  }
+  .planet {
+    &__orbit {
+      left: -50%;
+      @include p-s("bottom", -2960);
+      width: 200vw;
+      height: 200vw;
+    }
+    &__orbit1-item1 {
+      svg{
+        @include p-s("width", 646);
+        @include p-s("height", 96);
+      }
+    }
+    &__orbit1-item2 {
+      svg{
+        @include p-s("width", 436);
+        @include p-s("height", 96);
+      }
+    }
+    &__orbit1-item3 {
+      svg{
+        @include p-s("width", 348);
+        @include p-s("height", 96);
+      }
+    }
+    &__orbit1-item4 {
+      svg{
+        @include p-s("width", 318);
+        @include p-s("height", 98);
+      }
+    }
+  }
+  .planet {
+    &__orbit2-item1 {
+      svg{
+        @include p-s("width", 1150);
+        @include p-s("height", 336);
+      }
+    }
+    &__orbit2-item2 {
+      svg{
+        @include p-s("width", 112);
+        @include p-s("height", 148);
+      }
+    }
+    &__orbit2-item3 {
+      svg{
+        @include p-s("width", 260);
+        @include p-s("height", 216);
+      }
+    }
+    &__orbit2-item4 {
+      svg{
+        @include p-s("width", 1140);
+        @include p-s("height", 180);
+      }
+    }
+  }
+  .planet {
+    &__orbit3-item2 {
+      svg{
+        @include p-s("width", 1110);
+        @include p-s("height", 216);
+      }
+    }
+  }
+
+
+  .wrapper{
+    width: 100%;
+  }
+  .active-color-planet-min3{
+    width: 90vw !important;
+    height: 90vw;
+    @include p-s("top", -230);
+    left: -1.5%;
+  }
+  .autumn {
+    &__inner {
+      width: 90vw;
+      height: 90vw;
+      @include p-s("padding-top", 100);
+      @include p-s("padding-right", 50);
+      @include p-s("padding-bottom", 100);
+      @include p-s("padding-left", 50);
+      @include p-s("margin-top", 100);
+    }
+    &__circle {
+      width: 45vw;
+    }
+    &__circle::before{
+      content:"";
+      @include p-s("width", 160);
+      @include p-s("height", 160);
+    }
+    &__text-wrapper {
+      position: relative;
+      z-index: 2;
+    }
+    &__title {
+      @include p-s("font-size", 110);
+      @include p-s("line-height", 150);
+      @include shadow("text-shadow", 4, 4, 0, #6D4169);
+      font-family: 'StolzlDisplay-Bold';
+      font-weight: 700;
+      color: #B574AE;
+    }
+    &__text {
+      @include p-s("font-size", 60);
+      @include p-s("line-height", 80);
+      @include shadow("text-shadow", 4, 4, 0, #ccc);
+    }
+    &__btn {
+      @include p-s("font-size", 48);
+      @include p-s("line-height", 48);
+      @include p-s("padding-top", 36);
+      @include p-s("padding-right", 72);
+      @include p-s("padding-bottom", 36);
+      @include p-s("padding-left", 72);
+      @include p-s("margin-top", 42);
+      @include p-s("border-radius", 75);
+      @include shadow("box-shadow", 0, 6, 0, #6D4169);
+    }
+    &__btn:hover {
+      @include p-s("margin-top", 48);
+      box-shadow:none;
+    }
+  }
+
+  .arrow{
+    img{
+      @include p-s("width", 255);
+      @include p-s("height", 144);
+    }
+  }
+  @keyframes arrow {
+    0% {
+      @include p-s("bottom", 50);
+    }
+    10% {
+      @include p-s("bottom", 40);
+    }
+    25% {
+      @include p-s("bottom", 20);
+    }
+    50% {
+      @include p-s("bottom", 10);
+    }
+    75% {
+      @include p-s("bottom", 20);
+    }
+    90% {
+      @include p-s("bottom", 40);
+    }
+    100% {
+      @include p-s("bottom", 50);
+    }
+  }
+
+  .attention {
+    @include p-s("bottom", 800);
+    @include p-s("right", -1170);
+    &__left {
+      @include p-s("font-size", 60);
+      @include p-s("line-height", 60);
+      @include p-s("padding-top", 15);
+      @include p-s("padding-right", 30);
+      @include p-s("padding-bottom", 15);
+      @include p-s("padding-left", 30);
+      @include p-s("border-radius", 60);
+      @include p-s("margin-bottom", -60);
+      @include p-s("width", 411);
+      @include p-s("height", 150);
+      @include shadow("box-shadow", 0, -6, 0, #6D4169);
+    }
+    &__right {
+      @include p-s("height", 1200);
+    }
+  }
+
+  .menu-0 {
+    li{
+      @include p-s("margin-top", 40);
+      @include p-s("margin-right", 0);
+      @include p-s("margin-bottom", 40);
+      @include p-s("margin-left", 0);
+    }
+    .header__menu-btn-off{
+      @include p-s("width", 200);
+      @include p-s("height", 200);
+      @include p-s("border-radius", 48);
+      @include shadow("box-shadow", 0, 0, 24, rgba(119, 119, 119, 0.5));
+      @include p-s("top", 20);
+      @include p-s("right", 20);
+      .header__menu-btn-line-off::before{
+        content:"";
+        @include p-s("width", 140);
+        @include p-s("height", 12);
+      }
+      .header__menu-btn-line-off::after{
+        content:"";
+        @include p-s("width", 140);
+        @include p-s("height", 12);
+      }
+    }
+    .menu__wrapper{
+      @include p-s("width", 1110);
+      @include p-s("border-radius", 36);
+      @include p-s("padding-top", 30);
+      @include p-s("padding-right", 30);
+      @include p-s("padding-bottom", 30);
+      @include p-s("padding-left", 30);
+      display: block;
+    }
+    .menu__wrapper-col{
+      width: 100%;
+    }
+    .menu__hover { 
+      @include p-s("padding-top", 4);
+      @include p-s("padding-right", 10);
+      @include p-s("padding-bottom", 4);
+      @include p-s("padding-left", 10);
+      @include p-s("border-radius", 16);
+    }
+    .menu__hover span svg{
+      @include p-s("width", 75);
+      @include p-s("height", 40);
+    }
+    .menu-main-left-menu-container li{
+      @include p-s("padding-top", 4);
+      @include p-s("padding-right", 10);
+      @include p-s("padding-bottom", 4);
+      @include p-s("padding-left", 10);
+      @include p-s("border-radius", 16);
+    }
+    .menu-main-right-menu-container li{
+      @include p-s("padding-top", 4);
+      @include p-s("padding-right", 10);
+      @include p-s("padding-bottom", 4);
+      @include p-s("padding-left", 10);
+      @include p-s("border-radius", 16);
+    }
+  }
+  .menu-0--active {
+    @include p-s("padding-top", 20);
+    @include p-s("padding-right", 0);
+    @include p-s("padding-bottom", 20);
+    @include p-s("padding-left", 0);
+    @include p-s("font-size", 60);
+    @include p-s("line-height", 75);
+    @include shadow("text-shadow", 2, 2, 0, #ccc);
+  }
+}

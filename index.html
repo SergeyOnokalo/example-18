@@ -7,26 +7,86 @@
   <title>Document</title>
   <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="shortcut icon" href="" type="image/svg"> -->
+  <link rel="shortcut icon" href="./images/logo.png" type="image/png">
 </head>
-<body style="position: relative;">
+<body>
 
   <header>
-    <div class="header ">
-      <div class="header__wrapper-logo">
-        <img class="header__logo-img" src="./images/logo.png" alt="logo">
-        <div class="header__logo-text">
-          <p>МОУ СОШ №12 </p>
-          <p>г. Зеленокумска</p>
+    <div class="container">
+      <div class="header ">
+        <a href="#" class="header__wrapper-logo" >
+          <img class="header__logo-img" src="./images/logo.png" alt="logo">
+          <div class="header__logo-text">
+            <p>МОУ СОШ №12 </p>
+            <p>г. Зеленокумска</p>
+          </div>
+        </a>
+        <div class="header__menu">
+          <div id="btnMenuOn" class="header__menu-btn">
+            <div class="header__menu-btn-line"></div>
+          </div>
         </div>
-      </div>
-      <div class="header__menu" id="btn">
-        <div class="header__menu-btn">
-          <div class="header__menu-btn-line"></div>
+        <div id="menu0" class="menu-0">
+          <div class=" container-menu-w wrapper">
+            <div id="btnMenuOff" class="header__menu-btn-off">
+              <div class="header__menu-btn-line-off"></div>
+            </div>
+            <div id="menuWrapper" class="menu__wrapper">
+              <div class="menu__wrapper-col">
+                <div class="menu__hover">
+                  Сведения об образовательной организации <span><svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.41418" width="17.6714" height="2" transform="rotate(45 1.41418 0)" fill="#6D4169"/>
+                    <rect x="11" y="12.4956" width="17.6714" height="2" transform="rotate(-45 11 12.4956)" fill="#6D4169"/>
+                    <rect x="1.41418" y="1" width="17.6714" height="2" transform="rotate(45 1.41418 1)" fill="#B574AE"/>
+                    <rect x="11.1143" y="13.5" width="17.6714" height="2" transform="rotate(-45 11.1143 13.5)" fill="#B574AE"/>
+                    </svg></span>
+                  <div class="menu-menu-1-container">
+                    <ul class="menu">
+                      <li><a href="#">Основные сведения</a></li>
+                      <li><a href="#">Структура и органы управления образовательной организации</a></li>
+                      <li><a href="#">Документы</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="mainMenuLeft" class="menu-main-left-menu-container">
+                  <ul class="menu">
+                    <li><a href="#">Основные сведения</a></li>
+                    <li><a href="#">Документы</a></li>
+                    <li><a href="#">Структура и органы управления образовательной организации</a></li>
+                    <li><a href="#">Основные сведения</a></li>
+                    <li><a href="#">Документы</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu__wrapper-col">
+                <div id="mainMenuRight" class="menu-main-right-menu-container">
+                  <ul class="menu">
+                    <li><a href="#">Основные сведения</a></li>
+                    <li><a href="#">Документы</a></li>
+                    <li><a href="#">Структура и органы управления образовательной организации</a></li>
+                    <li><a href="#">Основные сведения</a></li>
+                    <li><a href="#">Документы</a></li>
+                  </ul>
+                </div>
+                <div class="menu__hover">
+                  Сведения об образовательной организации <span><svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.41418" width="17.6714" height="2" transform="rotate(45 1.41418 0)" fill="#6D4169"/>
+                    <rect x="11" y="12.4956" width="17.6714" height="2" transform="rotate(-45 11 12.4956)" fill="#6D4169"/>
+                    <rect x="1.41418" y="1" width="17.6714" height="2" transform="rotate(45 1.41418 1)" fill="#B574AE"/>
+                    <rect x="11.1143" y="13.5" width="17.6714" height="2" transform="rotate(-45 11.1143 13.5)" fill="#B574AE"/>
+                    </svg></span>
+                  <div class="menu-menu-1-container">
+                    <ul class="menu">
+                      <li><a href="#">Основные сведения</a></li>
+                      <li><a href="#">Структура и органы управления образовательной организации</a></li>
+                      <li><a href="#">Документы</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <ul class="menu" style="display: none;">
-          <li></li>
-        </ul>
       </div>
     </div>
   </header>
@@ -46,7 +106,7 @@
                   <h2 class="autumn__title">Добро пожаловать</h2>
                   <p class="autumn__text">на официальный сайт муниципального образовательного учреждения «Средняя общеобразовательная школа № 12 г. Зеленокумска Советского района» - информационный портал нашего школьного сообщества! </p>
                 </div>
-                <button class="autumn__btn">Узнать больше</button>
+                <!-- <button class="autumn__btn">Узнать больше</button> -->
               </div>
             </div>
           </div>
@@ -63,7 +123,7 @@
                   <h2 class="autumn__title">Добро пожаловать</h2>
                   <p class="autumn__text">на официальный сайт муниципального образовательного учреждения «Средняя общеобразовательная школа № 12 г. Зеленокумска Советского района» - информационный портал нашего школьного сообщества! </p>
                 </div>
-                <button class="autumn__btn">Узнать больше</button>
+                <!-- <button class="autumn__btn">Узнать больше</button> -->
               </div>
             </div>
           </div>
@@ -80,7 +140,7 @@
                   <h2 class="autumn__title">Добро пожаловать</h2>
                   <p class="autumn__text">на официальный сайт муниципального образовательного учреждения «Средняя общеобразовательная школа № 12 г. Зеленокумска Советского района» - информационный портал нашего школьного сообщества! </p>
                 </div>
-                <button class="autumn__btn">Узнать больше</button>
+                <!-- <button class="autumn__btn">Узнать больше</button> -->
               </div>
             </div>
           </div>
@@ -97,7 +157,7 @@
                   <h2 class="autumn__title">Добро пожаловать</h2>
                   <p class="autumn__text">на официальный сайт муниципального образовательного учреждения «Средняя общеобразовательная школа № 12 г. Зеленокумска Советского района» - информационный портал нашего школьного сообщества! </p>
                 </div>
-                <button class="autumn__btn">Узнать больше</button>
+                <!-- <button class="autumn__btn">Узнать больше</button> -->
               </div>
             </div>
           </div>
@@ -463,6 +523,15 @@
   
   <div class="arrow">
     <img src="./images/arrowDown.svg" alt="arrow">
+  </div>
+
+  <div class="attention">
+    <div class="attention__left">
+      Внимание!
+    </div>
+    <div class="attention__right">
+      
+    </div>
   </div>
 
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
